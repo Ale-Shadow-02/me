@@ -1,0 +1,911 @@
+
+
+@media(min-width: 1200px) 
+	.products
+		&-block
+			width: 49%
+	.form
+		&__input
+			flex-basis: 71%
+	.offer
+		.input
+			padding: 21px 114px
+	.hidden-desctop
+		display: none
+
+
+@media(min-width: 992px) and (max-width: 1200px)
+	.menu
+		ul 
+			li
+				padding-right: 12px
+	.main
+		&-img
+			&::before 
+				width: 333px
+				height: 333px
+			&::after
+				top: 255px
+				left: 50px 
+	.features
+		&-block
+			align-items: stretch
+			&__img
+				flex-basis: 64%
+	.form
+		&__input
+			flex-basis: 64%
+	.offer
+		.input
+			padding: 21px 114px
+	.hidden-desctop
+		display: none
+
+
+@media(min-width: 769px) and (max-width: 991px) 
+	.header
+		padding-top: 18px
+		&-logo
+			background: $active-color url(../img/mobyle_320/mobyle-heder-logo.png) center no-repeat
+			width: 55px
+			height: 45px
+			border-radius: 4px
+			margin-left: 70px
+	.nav-bar
+		//justify-content: space-around
+	.menu
+		position: fixed
+		top: 0
+		left: 0
+		justify-content: center
+		align-items: center
+		width: 100vw
+		height: 100vh
+		background-color: #373737
+		z-index: 100
+		left: -100vw
+		transition: all 0.5s
+		&-link 
+			position: absolute
+			display: block
+			width: 23px
+			height: 23px
+			z-index: 101
+			top: 12px
+			span
+			 	display: block
+			 	height: 4px
+			 	width: 35px
+			 	position: absolute
+			 	top: 50%
+			 	left: 50%
+			 	margin-left: -11px
+			 	margin-top: -2px
+			 	background-color: #373737
+			 	&::before
+			 		transition: all 0.2s
+			 		content: ''
+			 		margin-top: -11px
+			 		display: block
+			 		height: 4px
+			 		width: 35px
+			 		position: absolute
+			 		top: 50%
+			 		left: 50%
+			 		margin-left: -18px
+			 		background-color: #373737
+			 	&::after
+			 		transition: all 0.2s
+			 		content: ''
+			 		margin-top: 7px
+			 		display: block
+			 		height: 4px
+			 		width: 35px
+			 		position: absolute
+			 		top: 50%
+			 		left: 50%
+			 		margin-left: -18px
+			 		background-color: #373737
+			&_active
+				span
+					background-color: transparent
+					&:before
+						background-color: #f39002
+						transform: rotate(135deg)
+						margin-top: 0
+					&::after
+						background-color: #f39002
+						transform: rotate(-135deg)
+						margin-top: 0
+		&_active
+			left: 0
+		ul 
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			padding: 0
+			list-style: none
+			li 
+				padding-right: 0
+				border-right: 0
+				a 
+					display: block
+					width: 100%
+					font-size: 12px
+					font-weight: 400
+					text-transform: uppercase
+					line-height: 4
+					text-decoration: none
+					letter-spacing: 5px
+					color: #fff
+					&:focus
+						color: #f39002
+	.header
+		&-contacts
+			&__phone
+				&s 
+					flex-direction: column
+				margin-right: 10px
+				font-size: 17px
+				&:first-child 
+					border: none
+					padding-right: 0
+	.main
+		padding-top: 20px
+		&-img
+			display: none
+			&::after
+				top: 340px
+				left: 90px
+		&-text
+			text-align: center
+			&__title
+				margin-top: 33px 
+			&__form
+				margin-left: 45px
+				margin-right: 45px
+	.form
+		flex-direction: column
+		&-title
+			margin-right: 0
+		&__input
+			width: 415px
+			margin-right: auto
+			margin-left: auto
+			margin-bottom: 13px
+			padding-left: 120px
+	.button_big
+		margin-left: auto 
+		margin-right: auto 
+	.overlay
+		.popup
+			&-close
+				right: 0
+				top: -9px
+	.features
+		padding-bottom: 40px
+		&-blocks
+			justify-content: space-around
+		&-block
+			flex-basis: 47%
+			&__title
+				text-align: left
+			&__descr
+				text-align: left
+	.nambers
+		flex-direction: column
+		&-block
+			width: 100% 
+			margin-bottom: 20px
+	.products
+		&-block
+			display: inline-block !important
+			width: 100% !important
+			&__button
+				&__left
+					margin-right: 11px
+	.offer
+		.input
+			padding: 21px 113px
+
+	.production
+		&-text
+			width: 100%
+			&__title
+				padding: 20px
+				text-align: center
+				text-transform: uppercase
+			&__descr
+				margin-bottom: 30px
+				text-align: justify
+				text-align-last: center
+				width: 462px
+				margin-right: auto
+				margin-left: auto
+				padding-left: 0
+		&-slider
+			&_top
+				overflow: hidden
+				max-width: 690px
+				width: 100%
+				&__box
+					img
+						height: 377px
+						width: 690px
+			&_botton
+				overflow: hidden
+				max-width: 552px
+				width: 100%
+				display: flex
+				justify-content: center
+				align-items: flex-end
+				img
+					width: 110px
+					height: 60px
+	.customers
+		&-block
+			filter: grayscale(0)
+	.hidden-desctop
+		display: none
+	.hidden-1
+		display: none
+	.hidden-2
+		display: block
+	
+
+
+@media(min-width: 577px) and (max-width: 768px)
+	.hidden-mobile
+		display: none
+	.header
+		padding-top: 18px
+		&-logo
+			background: $active-color url(../img/mobyle_320/mobyle-heder-logo.png) center no-repeat
+			width: 55px
+			height: 45px
+			border-radius: 4px
+			margin-left: 70px
+	.nav-bar
+		//justify-content: space-around
+	.menu
+		position: fixed
+		top: 0
+		left: 0
+		justify-content: center
+		align-items: center
+		width: 100vw
+		height: 100vh
+		background-color: #373737
+		z-index: 100
+		left: -100vw
+		transition: all 0.5s
+		&-link 
+			position: absolute
+			display: block
+			width: 24px
+			height: 23px
+			z-index: 101
+			top: 13px
+			span
+			 	display: block
+			 	height: 4px
+			 	width: 22px
+			 	position: absolute
+			 	top: 50%
+			 	left: 50%
+			 	margin-left: -11px
+			 	margin-top: -2px
+			 	background-color: #373737
+			 	&::before
+			 		transition: all 0.2s
+			 		content: ''
+			 		margin-top: -11px
+			 		display: block
+			 		height: 4px
+			 		width: 22px
+			 		position: absolute
+			 		top: 50%
+			 		left: 50%
+			 		margin-left: -11px
+			 		background-color: #373737
+			 	&::after
+			 		transition: all 0.2s
+			 		content: ''
+			 		margin-top: 7px
+			 		display: block
+			 		height: 4px
+			 		width: 22px
+			 		position: absolute
+			 		top: 50%
+			 		left: 50%
+			 		margin-left: -11px
+			 		background-color: #373737
+			&_active
+				span
+					background-color: transparent
+					&:before
+						background-color: #f39002
+						transform: rotate(135deg)
+						margin-top: 0
+					&::after
+						background-color: #f39002
+						transform: rotate(-135deg)
+						margin-top: 0
+		&_active
+			left: 0
+		ul 
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			padding: 0
+			list-style: none
+			li 
+				padding-right: 0
+				border-right: 0
+				a 
+					display: block
+					width: 100%
+					font-size: 12px
+					font-weight: 400
+					text-transform: uppercase
+					line-height: 4
+					text-decoration: none
+					letter-spacing: 5px
+					color: #fff
+					&:focus
+						color: #f39002
+	.header
+		&-logo
+			margin-left: 40px
+		&-contacts
+			&__phone
+				font-size: 17px
+				margin-right: 14px
+				&s 
+					flex-direction: column
+				&:first-child 
+					border: none
+					padding-right: 0
+			
+
+	.main 
+		text-align: center
+		padding-top: 0
+		&-img
+			display: none
+			&::before 
+				width: 350px
+				height: 350px
+			&::after
+				top: 263px
+				left: 60px
+		&-text
+			&__title
+				margin-top: 55px 
+				font-size: 38px
+	.form
+		flex-direction: column
+		&-title
+			margin-right: 0
+		&__input
+			margin-bottom: 13px
+			padding-left: 141px
+	.button_big
+		margin-left: auto 
+		margin-right: auto 
+	.overlay
+		.popup
+			width: 555px
+			&-close
+				right: 0
+				top: -9px
+			&-form 
+				&__input
+					margin-bottom: 13px
+					padding-left: 99px
+				&__btn
+					margin-left: 0
+
+	
+	.features
+		padding-top: 24px
+		padding-bottom: 40px
+		&-blocks
+			flex-flow: column nowrap
+			align-items: center
+		&-block
+			width: 90%
+			margin-bottom: 15px
+			padding: 22px 10px 22px 9px
+			display: flex
+			align-items: center
+			justify-content: space-around
+			&__img
+				display: flex
+				justify-content: center
+				flex-basis: 110px
+				flex-shrink: 0
+			&__title
+				text-align: left
+			&__descr
+				text-align: left
+	.nambers
+		flex-direction: column
+		&-block
+			width: 100% 
+			margin-bottom: 20px
+	
+			
+
+	.products
+		&-block
+			display: block !important
+			width: 100% !important
+			&__button
+				&__left
+					margin-right: 11px
+	.offer
+		.input
+			padding: 21px 106px
+
+	.production
+		&-text
+			&__descr
+				padding-left: 0
+			&__title
+				padding: 20px
+				text-align: center
+				text-transform: uppercase
+			&__descr
+				text-align: justify
+				text-align-last: center
+				margin-bottom: 30px
+	.customers
+		padding-top: 0
+		padding-bottom: 55px
+		&-block
+			margin-bottom: 15px
+			filter: grayscale(0)
+	.hidden-mobile_nav
+		display: none
+	.customers
+		&-block
+			filter: grayscale(0)
+	.contacts
+		padding-top: 55px
+		padding-bottom: 14px
+		display: flex
+		flex-flow: column-reverse nowrap
+		align-items: center
+		.map
+			width: 100%
+			height: 420px
+			margin-bottom: 14px
+		&-block
+			position: relative
+			display: flex
+			flex-flow: column nowrap
+			align-items: center
+			max-width: 100%
+			padding: 0 0 28px 0
+			left: 50%
+			transform: translateX(-50%)
+			&__icon
+				display: none
+			&__text
+				text-align: center
+				margin-left: 0
+			&__title
+				text-align: center
+			&__button
+				margin-left: 0
+
+
+@media(max-width: 576px)
+	.hidden-mobile
+		display: none
+	.hidden-mobile__bot
+		display: none
+	.nav-bar
+		//justify-content: space-around
+	.menu
+		position: fixed
+		top: 0
+		left: 0
+		justify-content: center
+		align-items: center
+		width: 100vw
+		height: 100vh
+		background-color: #373737
+		z-index: 100
+		left: -100vw
+		transition: all 0.5s
+		&-link 
+			position: absolute
+			display: block
+			width: 24px
+			height: 23px
+			z-index: 101
+			top: 2px
+			span
+			 	display: block
+			 	height: 4px
+			 	width: 22px
+			 	position: absolute
+			 	top: 50%
+			 	left: 50%
+			 	margin-left: -10px
+			 	background-color: #373737
+			 	&::before
+			 		transition: all 0.2s
+			 		content: ''
+			 		margin-top: -10px
+			 		display: block
+			 		height: 4px
+			 		width: 22px
+			 		position: absolute
+			 		top: 50%
+			 		left: 50%
+			 		margin-left: -11px
+			 		background-color: #373737
+			 	&::after
+			 		transition: all 0.2s
+			 		content: ''
+			 		margin-top: 6px
+			 		display: block
+			 		height: 4px
+			 		width: 22px
+			 		position: absolute
+			 		top: 50%
+			 		left: 50%
+			 		margin-left: -11px
+			 		background-color: #373737
+			&_active
+				span
+					background-color: transparent
+					&:before
+						background-color: #f39002
+						transform: rotate(135deg)
+						margin-top: 0
+					&::after
+						background-color: #f39002
+						transform: rotate(-135deg)
+						margin-top: 0
+		&_active
+			left: 0
+		ul 
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			padding: 0
+			list-style: none
+			li 
+				padding-right: 0
+				border-right: 0
+				a 
+					display: block
+					width: 100%
+					font-size: 12px
+					font-weight: 400
+					text-transform: uppercase
+					line-height: 4
+					text-decoration: none
+					letter-spacing: 5px
+					color: #fff
+					&:focus
+						color: #f39002
+
+
+	.header
+		background-color: #f4f4f4
+		padding-top: 18px
+		&-logo
+			background: $active-color url(../img/mobyle_320/mobyle-heder-logo.png) center no-repeat
+			width: 35px
+			height: 32px
+			border-radius: 4px
+			margin-left: 36px
+		&-contacts
+			&__phone
+				font-size: 14px
+				font-weight: 400
+				margin: 0
+				padding: 0
+				&__bold
+					font-weight: 900
+				&s 
+					flex-direction: column
+				a 
+					font-size: 14px
+					font-weight: 400
+					margin: 0
+					padding: 0
+					
+				&:first-child 
+					border: none
+			&__button
+				display: inline-block
+				padding: 5px !important
+	.button
+		img
+			margin-right: 0
+	.main 
+		text-align: center
+		padding-top: 20px
+		padding-bottom: 20px
+		&-text 
+			&__title
+				font-size: 22px
+				color: $active-color
+			&__subtitle
+				font-size: 18px
+				margin-bottom: 40px
+			&__form
+				background-color: transparent
+				padding: 0 10px 10px 10px
+	.form
+		display: block
+		&-title
+			margin-right: 0
+			font-size: 13px
+			line-height: 1.4
+		&__input
+			/*display: block*/
+			margin-bottom: 13px
+			padding-top: 19px
+			padding-bottom: 20px
+
+	.overlay
+		.popup
+			width: 315px
+			&-close
+				right: 0
+				top: -9px
+			&-title
+				font-size: 16px
+				margin-bottom: 15px
+			&-form
+				padding: 0
+				&-header
+					font-size: 24px
+					span
+						font-size: 18px
+				&__label
+					font-size: 17px
+					margin-top: 13px
+				&__input
+					width: 255px
+					margin-bottom: 13px
+					padding-left: 46px
+
+
+
+	.features
+		padding-top: 24px 
+		padding-bottom: 40px 
+		&-blocks
+			flex-flow: column nowrap
+			align-items: center
+		&-block
+			width: 290px
+			margin-bottom: 8px
+			padding: 22px 16px 22px 9px
+			&__img
+				flex-basis: 42px
+				flex-shrink: 0
+				margin-right: 11px
+				padding-top: 18px
+	 .nambers
+			flex-direction: column
+			margin-bottom: 10px
+			&-block
+				width: 100%
+				padding-bottom: 24px
+				&__title
+					font-size: 30px
+					font-weight: 900
+			
+
+
+	.products
+		padding-top: 32px !important
+		padding-bottom: 43px !important
+		&-block
+			width: 100% !important
+			&__img
+				margin-bottom: 10px !important
+				img
+			&__buttons
+				width: 100%
+			&__title
+				font-size: 18px !important
+				font-weight: 500
+				margin-bottom: 17px	!important
+			&__button
+				padding: 13px 17px
+				&__left
+					padding: 13px 17px
+					margin-right: 11px
+			
+	.section
+		&-title
+			font-size: 22px
+			margin-bottom: 10px
+			&::after
+				display: none
+
+	.offer
+		padding-top: 50px
+		padding-bottom: 52px
+		&-title
+			font-size: 20px
+			font-weight: 700
+			&_small
+				font-size: 16px
+				font-weight: 400
+				margin-top: 15px
+				margin-bottom: 30px
+		&-form
+			&__label
+				font-size: 14px
+				font-weight: 300
+				margin-bottom: 22px
+	.input
+		width: 275px
+		padding-left: 55px
+
+	.production
+		padding-top: 28px
+		padding-bottom: 30%
+		&-text
+			&__title
+				width: 100%
+				font-size: 20px
+				font-weight: 700
+				margin-bottom: 17px
+				text-align: center
+				text-transform: uppercase
+			&__descr
+				font-size: 14px
+				font-weight: 300
+				padding-left: 0
+				text-align: justify
+				text-align-last: center
+				margin-bottom: 22px
+		&-slider
+			&_top
+				margin-bottom: -23%
+				&__box
+					img
+						object-fit: cover
+	.paragraph
+		margin-top: 15px
+		margin-bottom: 15px
+	.customers
+		padding-top: 10px
+		padding-bottom: 28px
+		&-block
+			height: 87px
+			margin-bottom: 8px
+			filter: grayscale(0)
+			img
+				max-width: 95%
+				max-height: 75%
+	.hidden-mobile_nav
+		display: none
+	.hidden-desctop
+		opacity: 1
+		margin-top: 16px
+		margin-bottom: 19px
+	.contacts
+		display: flex
+		flex-flow: column-reverse nowrap
+		align-items: center
+		.map
+			width: 100%
+			height: 420px
+			margin-bottom: 14px
+		&-block
+			position: relative
+			display: flex
+			flex-flow: column nowrap
+			padding: 0 0 28px 0
+			left: 50%
+			top: 0
+			transform: translateX(-50%)
+			&-o 
+				justify-content: center
+			&__icon
+				display: none
+			&__text
+				text-align: center
+				margin-left: 0
+			&__title
+				text-align: center
+				font-weight: 700
+			&__button
+				margin-left: 0 
+	.feedback-slider
+		&:hover
+			cursor: default
+	.footer
+		font-size: 11px
+		font-weight: 300
+		height: 88px
+
+
+@media(min-width: 430px) and (max-width: 576px)
+	.features
+		&-block
+			&-wrap
+				padding: 11px 30px 
+				margin-bottom: 8px 
+				margin-left: 5%
+				margin-right: 5%
+
+
+
+
+
+@media(min-width: 320px) and (max-width: 430px)
+	.features
+		&-block
+			&-wrap
+				padding: 11px 10px 
+				margin-bottom: 8px 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+			
+
+	
+
+		

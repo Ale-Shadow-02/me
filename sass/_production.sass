@@ -1,0 +1,54 @@
+.production
+	padding-top: 70px
+	padding-bottom: 50px
+	&-slider
+		&_top
+			margin-bottom: 13px
+			max-height: 380px
+			height: 377px
+			max-width: 690px
+			width: 100%
+			overflow-y: hidden
+			&:hover
+				cursor: pointer
+			&__box
+				img 
+					height: 377px
+					width: 690px
+
+		&_bottom
+			padding-left: 30px
+			padding-right: 30px
+			height: 78px
+			overflow-y: hidden
+			&:hover
+				cursor: pointer
+		&__box
+			max-height: 78px
+			padding: 0 6px
+	&-text
+		width: 462px
+		width: 100%
+		&__title
+			margin-top: 19px
+			background-color: $active-color
+			color: $text-color-light
+			padding: 18px 29px
+			margin-bottom: 28px
+			font-size: 28px
+			font-weight: 400
+		&__descr
+			padding-left: 30px
+			font-size: 16px 
+			font-weight: 300 
+			line-height: 24px
+			color: $text-color-dark 
+			text-align: justify
+
+	.slick-slide 
+		filter: grayscale(100%)
+	.slick-current
+		filter: grayscale(0)
+.paragraph
+	margin-top: 20px
+	margin-bottom: 20px
